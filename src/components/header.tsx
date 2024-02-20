@@ -11,16 +11,32 @@ const HeaderTag = styled.header `
 const HeaderMainText = styled.div`
     max-width: 800px;
     display:grid;
-    padding: 160px 0 0 160px;
-
+    padding: 120px 0 0 160px;
 `
+
+const MainTitle = styled.h1`
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--darkblue);
+    filter: var(--white-shadow);
+`
+const MainText = styled.p`
+    text-align: justify;
+    color:white;
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    max-width: 400px;
+`
+
 export function Header (){
     return (
         <>
             <HeaderTag>
                 <HeaderMainText>
-                    <h1> Cadastre-se </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ad adipisci tenetur nihil molestias. Incidunt facere ullam voluptatum cumque reiciendis iste quia excepturi? Laudantium, hic consectetur natus officia veniam delectus!</p>
+                    <MainTitle> E-SPORT </MainTitle>
+                    <MainText>
+                        Inscreva-se 
+                    </MainText>
                 </HeaderMainText>
                     <button> aqui</button>
             </HeaderTag>
