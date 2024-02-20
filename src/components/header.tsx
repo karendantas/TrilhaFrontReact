@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Button } from "./button"
 
 const img = "/src/assets/headerimg.png"
 const HeaderTag = styled.header `
@@ -11,7 +12,7 @@ const HeaderTag = styled.header `
 const HeaderMainText = styled.div`
     max-width: 800px;
     display:grid;
-    padding: 120px 0 0 160px;
+    padding: 100px 0 0 160px;
 `
 
 const MainTitle = styled.h1`
@@ -26,6 +27,8 @@ const MainText = styled.p`
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
     max-width: 400px;
+
+    padding-bottom: 20px;
 `
 
 export function Header (){
@@ -35,10 +38,11 @@ export function Header (){
                 <HeaderMainText>
                     <MainTitle> E-SPORT </MainTitle>
                     <MainText>
-                        Inscreva-se 
+                        ESports é o maior campeonato de jogos online da fenda
+                        do Bikini. Vagas limitadas, cadastre-se já!
                     </MainText>
+                    <Button isPrimary={true}/>
                 </HeaderMainText>
-                    <button> aqui</button>
             </HeaderTag>
         </>
     )
