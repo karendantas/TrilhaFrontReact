@@ -3,12 +3,13 @@ import css from "styled-components";
 
 interface ButtonProps{
     isPrimary:boolean;
+    title:string;
 }
 
 const ButtonTag = styled.a<{$isPrimary?:boolean;}>`
     //props
     width: ${props => props.$isPrimary ? "200px" : "150px" };
-    padding: 20px;
+    padding: ${props => props.$isPrimary ? "20px": "10px"};
 
     color:white;
     background-color: var(--darkblue);
@@ -18,7 +19,8 @@ const ButtonTag = styled.a<{$isPrimary?:boolean;}>`
     border-radius: 40px;
 
     text-align: center;
-    font-weight: 800px;
+    font-size: ${props => props.$isPrimary ? "20px": "15px"};
+    font-weight: bolder;
     
     ${props => props.$isPrimary ? 
         "&:hover {filter:none; transform:translateY(7px)}"
@@ -26,11 +28,11 @@ const ButtonTag = styled.a<{$isPrimary?:boolean;}>`
     }
     
 `
-export function Button ({isPrimary}: ButtonProps){
+export function Button ({isPrimary, title}: ButtonProps){
     return (
         <>
             <ButtonTag $isPrimary = {isPrimary}>
-                INSCREVER-SE 
+                {title}
             </ButtonTag>
         </>
     )   

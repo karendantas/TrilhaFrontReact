@@ -22,12 +22,14 @@ const MainTitle = styled.h1`
     filter: var(--white-shadow);
 `
 const MainText = styled.p`
+    max-width: 500px;
+
     text-align: justify;
     color:white;
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
-    max-width: 400px;
 
+    margin-top: 20px;
     padding-bottom: 20px;
 `
 
@@ -41,7 +43,7 @@ export function Header (){
                         ESports é o maior campeonato de jogos online da fenda
                         do Bikini. Vagas limitadas, cadastre-se já!
                     </MainText>
-                    <Button isPrimary={true}/>
+                    <Button isPrimary={true} title = {"INSCREVA-SE"}/>
                 </HeaderMainText>
             </HeaderTag>
         </>
