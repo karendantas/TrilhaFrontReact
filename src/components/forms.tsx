@@ -1,14 +1,23 @@
 import styled from "styled-components"
 import { Button } from "./button"
 
+const OrangeBg = styled.div`
+    background-color: rgb(255,167,93);
+    width: 100%;
+    height: 900px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+`
 
 const FormTag = styled.form`
-    max-width: 700px;
+    width: 650px;
     height: 800px;
 
-    margin: 0 auto;
-
-    border-radius: 20px;
+    background-color: #fcf6f6;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     
 
@@ -34,9 +43,10 @@ const FormGroup = styled.div`
 
 const InputTag = styled.input`
     padding: 20px;
+    background-color: #fcf6f6;
     outline:none;
     border:none;
-    border-radius: 30px;
+    border-radius: 5px;
     box-shadow: rgba(58, 57, 57, 0.19) 0px 10px 20px, rgba(58, 57, 57, 0.23) 0px 6px 6px;
 `
 
@@ -47,7 +57,7 @@ const LabelTag = styled.label`
 
 export function Form (){
     return (
-        <>
+        <OrangeBg>
         <FormTag>
             <FormContent>
                 <h1> Formulário</h1>
@@ -74,6 +84,6 @@ export function Form (){
                 <Button isPrimary ={false} title={"Confirmar"}/>
             </FormContent>
         </FormTag>
-        </>
+        </OrangeBg>
     )
 }

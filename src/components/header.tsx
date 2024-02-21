@@ -5,8 +5,8 @@ const img = "/src/assets/headerimg.png"
 const HeaderTag = styled.header `
     background-image: url(${img});
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
+    background-size: cover;
+    height: 70vh;
 `
 
 const HeaderMainText = styled.div`
